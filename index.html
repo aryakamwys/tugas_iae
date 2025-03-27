@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Kw (TMDB)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="home">
+            <h1>Netflix aneh</h1>
+            <button onclick="showSection('movie-genres')">🎬 Movie List</button>
+            <button onclick="showSection('tv-genres')">📺 TV List</button>
+            <button onclick="showSection('languages')">🌍 Languages List</button>
+        </div>
+
+        <div id="movie-genres" class="hidden">
+            <h2>🎬 Movie List</h2>
+            <ul id="movie-list"></ul>
+            <button class="back-btn" onclick="goBack()">🔙 Back</button>
+        </div>
+
+        <div id="tv-genres" class="hidden">
+            <h2>📺 TV List</h2>
+            <ul id="tv-list"></ul>
+            <button class="back-btn" onclick="goBack()">🔙 Back</button>
+        </div>
+
+        <div id="languages" class="hidden">
+            <h2>🌍 Languages List</h2>
+            <ul id="languages-list"></ul>
+            <button class="back-btn" onclick="goBack()">🔙 Back</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
